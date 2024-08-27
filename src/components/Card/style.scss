@@ -1,0 +1,78 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  position: relative;
+  width: 100%;
+  padding: 8px;
+  background: #30363E;
+  border-radius: 4px;
+  filter: drop-shadow(4px 4px 5px rgba(0, 0, 0, 0.05)) drop-shadow(-5px 0 5px rgba(0, 0, 0, 0.02));
+
+  &__badge {
+    position: absolute;
+    top: -9px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    width: 100%;
+    max-width: 78px;
+    padding: 3px;
+    border-radius: 2px;
+    font-size: 8px;
+    font-weight: 900;
+    line-height: 11px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__badge.popular {
+    background: #2D69EB;
+  }
+
+  &__badge.trusted {
+    background: #FC3D40;
+  }
+
+  &__logo-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 4px;
+    width: 100%;
+    height: 100%;
+    max-height: 32px;
+  }
+
+  &__logo {
+    display: block;
+    width: 100%;
+  }
+
+  &__title {
+    font-size: 10px;
+    font-weight: 800;
+    color: var(--title-color);
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  &__info {
+    font-size: 8px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  &__button {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    max-width: 130px;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,38 @@
+.section {
+  &:not(:last-of-type) {
+    padding-bottom: 24px;
+  }
+
+  &__title {
+    font-size: 18px;
+    font-weight: 800;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: var(--title-color);
+  }
+
+  &__header {
+    display: grid;
+    align-items: center;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 30px;
+    padding-bottom: 16px;
+  }
+
+  &__button {
+    max-width: 24px;
+    max-height: 24px;
+    border: 0;
+    padding: 0;
+    border-radius: 4px;
+    background-color: #30363E;
+  }
+}
+
+@media (min-width: 768px) {
+  .section {
+    &__header {
+      padding-bottom: 24px;
+    }
+  }
+}

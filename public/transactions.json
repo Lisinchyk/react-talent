@@ -1,0 +1,36 @@
+{
+  "id": "transaction_id_1234",
+  "transactions": [
+    {
+      "id": "142354",
+      "service": "SticPay",
+      "date": "02.01",
+      "time": "12:34PM",
+      "amount": 23.05,
+      "currency": "USD",
+      "status": "Processing",
+      "type": "Withdraw"
+    },
+    {
+      "id": "142354",
+      "service": "SticPay",
+      "date": "05.12",
+      "time": "3:40PM",
+      "amount": 123.27,
+      "currency": "USD",
+      "status": "Active",
+      "type": "Withdraw"
+    },
+    {
+      "id": "23561",
+      "service": "Mastercard",
+      "date": "24.11",
+      "time": "4:20AM",
+      "amount": 80.00,
+      "currency": "USD",
+      "status": "Performed",
+      "type": "Withdraw"
+    }
+  ]
+}
+

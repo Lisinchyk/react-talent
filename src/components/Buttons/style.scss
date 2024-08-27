@@ -1,0 +1,59 @@
+.button {
+  border: none;
+  color: var(--title-color);
+  cursor: pointer;
+}
+
+.action__button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: var(--button-color);
+  color: var(--title-color);
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 19px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.context-button {
+  display: flex;
+  align-items: center;
+  border: none;
+  color: var(--title-color);
+  cursor: pointer;
+
+  &__wrapper {
+    display: flex;
+    border-radius: 3px;
+    overflow: hidden;
+  }
+
+  &__dropdown {
+    background-color: #4C84FF;
+    padding: 10px 12px;
+    gap: 5px;
+    cursor: pointer;
+
+    > span:first-of-type {
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    > span:last-of-type {
+      font-size: 8px;
+      font-weight: 900;
+      padding: 3px 2px;
+      background-color: #2D69EB;
+      border-radius: 3px;
+    }
+  }
+
+  &__add {
+    padding: 6px;
+    background-color: #2D69EB;
+    cursor: pointer;
+  }
+}
+

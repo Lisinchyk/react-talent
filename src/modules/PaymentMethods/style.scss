@@ -1,0 +1,20 @@
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 16px;
+  column-gap: 20px;
+
+  &__wrapper {
+    display: grid;
+    gap: 24px
+  }
+
+  &__title {
+    width: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: var(--title-color);
+  }
+}

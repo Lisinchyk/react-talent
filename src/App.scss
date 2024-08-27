@@ -1,0 +1,31 @@
+@import "normalize.css/normalize.css";
+
+:root {
+  font-family: Avenir, sans-serif;
+  --bg-color: #202329; //#20242A
+  --title-color: #ffffff;
+  --button-color: #F9484B;
+  --processing-color: #C69516;
+  --active-color: #00BA61;
+  --performed-color: #2658D7;
+  --card-color: #30363E;
+  --input-bg-color: #30363E;
+  --descr-color: rgba(255, 255, 255, 0.5);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+body {
+  position: relative;
+  background-color: var(--bg-color);
+}
+
+.main {
+  padding: 24px 20px;
+}

@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Mastercard",
+    "icon": "mastercard.svg",
+    "commission": "3%",
+    "status": "popular",
+    "isCrypto":false
+  },
+  {
+    "name": "Visa",
+    "icon": "visa.svg",
+    "commission": "3%",
+    "status": "trusted",
+    "isCrypto": false
+  },
+  {
+    "name": "Skrill",
+    "icon": "skrill.svg",
+    "commission": "0%",
+    "status": "",
+    "isCrypto": false
+  },
+  {
+    "name": "Perfect Money, EUR",
+    "icon": "pm.svg",
+    "commission": "0%",
+    "status": "",
+    "isCrypto": false
+  },
+  {
+    "name": "Piastrix, EUR",
+    "icon": "piastrix.svg",
+    "commission": "0%",
+    "status": "",
+    "isCrypto": false
+  },
+  {
+    "name": "SticPay, EUR",
+    "icon": "sticpay.svg",
+    "commission": "0%",
+    "status": "",
+    "isCrypto": false
+  },
+  {
+    "name": "PIN",
+    "icon": "pin.svg",
+    "commission": "1%",
+    "status": "",
+    "isCrypto": false
+  },
+  {
+    "name": "BTC",
+    "icon": "bitcoin.svg",
+    "commission": "0%",
+    "status": "",
+    "isCrypto": true
+  },
+  {
+    "name": "ETH",
+    "icon": "eth.svg",
+    "commission": "0%",
+    "status": "",
+    "isCrypto": true
+  },
+  {
+    "name": "USDT",
+    "icon": "usdt.svg",
+    "commission": "0%",
+    "status": "",
+    "isCrypto": true
+  }
+]
