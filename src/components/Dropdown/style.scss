@@ -13,6 +13,7 @@
     border: none;
     padding: 0;
     background-color: transparent;
+    cursor: pointer;
 
     & > img {
       display: grid;
@@ -38,5 +39,33 @@
     padding: 16px;
     border-top: 1px solid #000000;
     border-radius: 4px;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 768px) {
+  .dropdown {
+    &__container {
+      display: flex;
+      align-items: center;
+      margin-left: 32px;
+      margin-right: 32px;
+      height: 100%;
+      min-height: 70px;
+    }
+
+    &__button {
+      display: flex;
+      align-items: center;
+      width: 100%;
+
+      & > img {
+        margin-left: auto;
+      }
+    }
+
+    &__list {
+      top: 54px;
+    }
   }
 }

@@ -42,6 +42,7 @@ export const Promo = () => {
           )}
         </div>
         <ActionButton
+          disabled={!isPromoCodeValid}
           onClick={handleApplyButtonClick}
           title="Apply"
         />

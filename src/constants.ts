@@ -50,3 +50,7 @@ export const FILTER_OPTIONS = [
     value: FilterSortValues.Processing
   }
 ];
+
+export const DESKTOP_QUERY = {
+  query: "(min-width: 768px)"
+};

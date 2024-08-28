@@ -2,16 +2,14 @@ type TransactionCardItemProps = {
   text: string;
   value: string;
   className?: string
-  type?: "mobile" | "desktop";
 };
 
 export const TransactionCardItem = ({
   text,
   value,
-  className = "",
-  type
+  className = ""
 }: TransactionCardItemProps) => (
-  <div className={`transaction-card__data ${type}`}>
+  <div className="transaction-card__data">
     <p className={className}>{value}</p>
     <p>{text}</p>
   </div>

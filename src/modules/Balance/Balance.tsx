@@ -79,12 +79,20 @@ export const Balance = () => {
             />
           )}
         </div>
-        <button className="promocode__button" onClick={handleApplyButtonClick}>Apply</button>
+        <button
+          className="promocode__button"
+          onClick={handleApplyButtonClick}
+          disabled={!isPromoCodeValid}
+        >
+          Apply
+        </button>
       </div>
-      <ActionButton
-        title="Deposit"
-        onClick={() => console.log("Deposit button clicked!")}
-      />
+      <div className="balance__footer">
+        <ActionButton
+          title="Deposit"
+          onClick={() => console.log("Deposit button clicked!")}
+        />
+      </div>
     </div>
   );
 };

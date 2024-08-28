@@ -54,5 +54,52 @@
     font-weight: 800;
     line-height: 16px;
     border-radius: 4px;
+    cursor: pointer;
+
+    &:hover {
+      color: rgba(255, 255, 255, 0.7);
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .amount {
+    padding-left: 32px;
+    padding-right: 32px;
+
+    &--title {
+      font-size: 18px;
+      line-height: 25px;
+      margin-bottom: 18px;
+    }
+
+    &--input {
+      padding: 12px;
+
+      & > input {
+        font-size: 18px;
+        line-height: 25px;
+      }
+    }
+  }
+
+  .quicks {
+    padding-bottom: 16px;
+
+    &-button {
+      padding: 10px;
+      font-size: 16px;
+      line-height: 22px;
+      width: 100%;
+
+      &:not(:last-of-type) {
+        margin-right: 16px;
+      }
+    }
+
+    &--warning {
+      font-size: 14px;
+      line-height: 19px;
+    }
   }
 }

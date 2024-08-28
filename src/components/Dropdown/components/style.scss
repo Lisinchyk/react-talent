@@ -52,3 +52,34 @@
     }
   }
 }
+
+@media (min-width: 768px) {
+  .dropdown {
+    &__selected {
+      display: flex;
+    }
+
+    &__info {
+      column-gap: 16px;
+
+      & p:not(:last-of-type) {
+        font-size: 14px;
+        font-weight: 800;
+        line-height: 19px;
+      }
+
+      & p:first-of-type {
+        &::after {
+          right: -11px;
+          width: 4px;
+          height: 4px;
+        }
+      }
+
+      & p:last-of-type {
+        font-size: 12px;
+        line-height: 16px;
+      }
+    }
+  }
+}

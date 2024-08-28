@@ -10,6 +10,7 @@
       align-items: center;
       text-decoration: none;
       color: var(--title-color);
+      cursor: pointer;
 
       & > img {
         position: relative;
@@ -30,6 +31,7 @@
     padding: 0;
     border: 0;
     background-color: transparent;
+    cursor: pointer;
   }
 
   &__info {
@@ -109,5 +111,61 @@
     font-weight: 900;
     line-height: 16px;
     border-radius: 4px;
+    cursor: pointer;
+
+    &:disabled {
+      opacity: 0.5;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .balance {
+    &__header {
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+
+    &__info {
+      border-radius: initial;
+
+      & p:first-of-type {
+        font-size: 16px;
+        line-height: 22px;
+      }
+
+      & p:last-of-type {
+        font-size: 24px;
+        line-height: 33px;
+      }
+    }
+
+    &__footer {
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+  }
+
+  .promocode {
+    padding-left: 32px;
+    padding-right: 32px;
+    column-gap: initial;
+    justify-content: space-between;
+
+    &__input {
+      padding: 10px 16px;
+
+      &--wrapper {
+        width: 100%;
+        max-width: 465px;
+      }
+    }
+
+    &__button {
+      max-width: 152px;
+      font-size: 16px;
+      font-weight: 800;
+      line-height: 22px;
+    }
   }
 }

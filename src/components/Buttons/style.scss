@@ -15,6 +15,10 @@
   line-height: 19px;
   border-radius: 4px;
   cursor: pointer;
+
+  &:disabled {
+    opacity: 0.5;
+  }
 }
 
 .context-button {
