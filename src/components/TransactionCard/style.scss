@@ -37,6 +37,10 @@
     display: grid;
     gap: 2px;
 
+    &.desktop {
+      display: none;
+    }
+
     p:first-of-type {
       font-size: 12px;
       font-weight: 800;
@@ -64,6 +68,67 @@
       font-weight: 400;
       line-height: 11px;
       color: rgba(255, 255, 255, 0.6)
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .transaction-card {
+    display: grid;
+    grid-template-columns: 0.08fr 1fr;
+    align-items: center;
+
+    &__header {
+      display: block;
+      padding: 0;
+      justify-content: initial;
+      background-color: transparent;
+    }
+
+    &__body {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: 1fr;
+      padding: 0;
+    }
+
+    &__data {
+      &.mobile {
+        display: none;
+      }
+
+      &.desktop {
+        display: block;
+      }
+
+      p:first-of-type {
+        font-size: 16px;
+        line-height: 22px;
+      }
+
+      p:last-of-type {
+        font-size: 14px;
+        line-height: 19px;
+      }
+
+      p:first-of-type.processing,
+      p:first-of-type.active,
+      p:first-of-type.performed {
+        text-align: left;
+      }
+    }
+
+    &__logo {
+      width: 48px;
+      height: 48px;
+      border-radius: 10px;
+      background-color: #30363E;
+      padding: 11px 2px;
+
+      &>img {
+        width: 100%;
+        max-height: 25px;
+      }
     }
   }
 }

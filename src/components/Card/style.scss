@@ -76,3 +76,26 @@
     cursor: pointer;
   }
 }
+
+@media (min-width: 768px) {
+  .card {
+    &__logo-wrapper {
+      max-height: 37px;
+      max-width: 105px;
+    }
+
+    &__title {
+      font-size: 14px;
+      line-height: 19px;
+    }
+
+    &__info {
+      font-size: 12px;
+      line-height: 16px;
+    }
+
+    &__button {
+      max-width: 172px;
+    }
+  }
+}

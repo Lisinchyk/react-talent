@@ -6,6 +6,7 @@ import { Section } from "../../components/Section/Section.tsx";
 import { Filter, OptionType } from "../../components/Filter/Filter.tsx";
 import { setFilter } from "../../features/transactions/transactionsSlice.ts";
 import { FILTER_OPTIONS, FilterSortValues } from "../../constants.ts";
+import "./style.scss";
 
 export const Transactions = () => {
   const dispatch = useAppDispatch();
@@ -38,10 +39,12 @@ export const Transactions = () => {
           </div>
         ))}
       </div>
-      <ActionButton
-        onClick={loadMore}
-        title="Show More"
-      />
+      <div className="action-button__wrapper">
+        <ActionButton
+          onClick={loadMore}
+          title="Show More"
+        />
+      </div>
     </Section>
   );
 };

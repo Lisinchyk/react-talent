@@ -1,0 +1,11 @@
+.action-button {
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+
+    & > button {
+      max-width: 280px;
+      padding: 11px;
+    }
+  }
+}

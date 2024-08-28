@@ -1,6 +1,7 @@
-import "./style.scss";
 import { Transactions } from "../../features/transactions/transactionsAPI.ts";
+import { TransactionCardItem } from "./TransactionCardItem.tsx";
 import { CurrencySymbols } from "../../constants.ts";
+import "./style.scss";
 
 type TransactionCardProps = {
   data: Transactions;
@@ -16,28 +17,36 @@ export const TransactionCard = ({
           <div className="transaction-card__logo">
             <img src={`/assets/logos/${data.service.toLowerCase()}.svg`} alt="master-card"/>
           </div>
-          <div className="transaction-card__data">
-            <p className={data.status.toLowerCase()}>{data.status}</p>
-            <p>Operation Status</p>
-          </div>
+          <TransactionCardItem
+            text="Operation Status"
+            value={data.status}
+            className={data.status.toLowerCase()}
+            type="mobile"
+          />
         </div>
         <div className="transaction-card__body">
-          <div className="transaction-card__data">
-            <p>by {data.service}, {data.currency}</p>
-            <p>{data.type}</p>
-          </div>
-          <div className="transaction-card__data">
-            <p>{data.id}</p>
-            <p>Transactions Number</p>
-          </div>
-          <div className="transaction-card__data">
-            <p>{data.date} at {data.time}</p>
-            <p>Payment Date</p>
-          </div>
-          <div className="transaction-card__data">
-            <p>{data.amount}{CurrencySymbols[data.currency]}</p>
-            <p>Amount Payed</p>
-          </div>
+          <TransactionCardItem
+            text={`by ${data.service}, ${data.currency}`}
+            value={`${data.id}`}
+          />
+          <TransactionCardItem
+            text="Transactions Number"
+            value={`${data.id}`}
+          />
+          <TransactionCardItem
+            text="Payment Date"
+            value={`${data.date} at ${data.time}`}
+          />
+          <TransactionCardItem
+            text="Amount Payed"
+            value={`${data.amount}${CurrencySymbols[data.currency]}`}
+          />
+          <TransactionCardItem
+            text="Operation Status"
+            value={data.status}
+            className={data.status.toLowerCase()}
+            type="desktop"
+          />
         </div>
       </div>
     </div>
