@@ -25,12 +25,12 @@ export const Menu = () => {
   return (
     <div className={`menu ${open}`}>
       <div className="menu__header">
-        <img src="src/assets/logos/main-logo-small.svg" alt="logo" className="menu__logo" />
+        <img src="/assets/logos/main-logo-small.svg" alt="logo" className="menu__logo" />
         <button
           className="menu__close-button"
           onClick={handleCloseMenu}
         >
-          <img src="src/assets/icons/close.svg" alt="close-button-icon"/>
+          <img src="/assets/icons/close.svg" alt="close-button-icon"/>
         </button>
       </div>
       <ul className="menu__list">

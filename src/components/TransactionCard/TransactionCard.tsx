@@ -14,7 +14,7 @@ export const TransactionCard = ({
       <div className="transaction-card">
         <div className="transaction-card__header">
           <div className="transaction-card__logo">
-            <img src={`src/assets/logos/${data.service}.svg`} alt="master-card"/>
+            <img src={`/assets/logos/${data.service.toLowerCase()}.svg`} alt="master-card"/>
           </div>
           <div className="transaction-card__data">
             <p className={data.status.toLowerCase()}>{data.status}</p>

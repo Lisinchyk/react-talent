@@ -14,8 +14,6 @@ export const Section = ({
   icon,
   onClick
 }: SectionProps) => {
-  // const padding = withoutPadding ? "" : "with-padding";
-  
   return (
     <section className="section">
       <div className="section__header">

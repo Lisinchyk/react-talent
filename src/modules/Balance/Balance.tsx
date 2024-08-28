@@ -5,9 +5,9 @@ import { closeBalanceModule } from "../../features/paymentServices/paymentServic
 import { usePromoInput } from "../../hooks/usePromoInput.ts";
 import { CurrencySymbols, MAX_PROMO_CODE_LENGTH } from "../../constants.ts";
 import { selectUserBalance } from "../../features/user/userSlice.ts";
-import "./style.scss";
 import { Amount } from "../../components/Amount/Amount.tsx";
 import { Dropdown } from "../../components/Dropdown/Dropdown.tsx";
+import "./style.scss";
 
 export const Balance = () => {
   const dispatch = useAppDispatch();
@@ -44,14 +44,14 @@ export const Balance = () => {
           className="balance__header--link"
           onClick={handleCloseBalance}
         >
-          <img src="src/assets/icons/chevron-left.svg" alt="back to the methods"/>
+          <img src="/assets/icons/chevron-left.svg" alt="back to the methods"/>
           <h1>Back to Payment Methods</h1>
         </a>
         <button
           className="balance__close"
           onClick={handleCloseBalance}
         >
-          <img src="src/assets/icons/close-icon.svg" alt=""/>
+          <img src="/assets/icons/close-icon.svg" alt=""/>
         </button>
       </div>
       <div className="balance__info">
@@ -73,7 +73,7 @@ export const Balance = () => {
           />
           {isPromoCodeValid && (
             <img
-              src="src/assets/icons/check-circle.svg"
+              src="/assets/icons/check-circle.svg"
               alt="validation-result-icon"
               className="promocode__input--icon"
             />

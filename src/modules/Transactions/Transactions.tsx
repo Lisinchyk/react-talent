@@ -26,7 +26,7 @@ export const Transactions = () => {
   return (
     <Section
       title="Transactions"
-      icon={<img src="src/assets/icons/filters.svg" alt="filters" />}
+      icon={<img src="/assets/icons/filters.svg" alt="filters" />}
       onClick={() => console.log("Filter button clicked!")}
     >
       <div>

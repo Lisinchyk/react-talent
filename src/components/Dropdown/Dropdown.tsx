@@ -37,7 +37,7 @@ export const Dropdown = () => {
           name={selectedMethod?.name}
           commission={selectedMethod?.commission}
         />
-        <img src="src/assets/icons/down-chevron.svg" alt="chevron down"/>
+        <img src="/assets/icons/down-chevron.svg" alt="chevron down"/>
       </button>
       {isDropdownListOpen && (
         <ul className="dropdown__list">

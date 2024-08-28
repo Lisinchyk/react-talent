@@ -38,7 +38,7 @@ export const Promo = () => {
             onChange={handlePromoCodeChange}
           />
           {isPromoCodeValid && (
-            <img src="src/assets/icons/check-circle.svg" alt="validation-result-icon" className="promo__input--icon" />
+            <img src="/assets/icons/check-circle.svg" alt="validation-result-icon" className="promo__input--icon" />
           )}
         </div>
         <ActionButton

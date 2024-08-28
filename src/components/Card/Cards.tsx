@@ -22,7 +22,7 @@ export const Cards = ({
     <div className="card">
       {status && <span className={`card__badge ${status}`}>{status}</span>}
       <div className="card__logo-wrapper">
-        <img src={`src/assets/logos/${icon}`} className="card__logo" alt="card-logo-icon"/>
+        <img src={`/assets/logos/${icon}`} className="card__logo" alt="card-logo-icon"/>
       </div>
       <h4 className="card__title">{name}</h4>
       <p className="card__info">Commission {commission}</p>

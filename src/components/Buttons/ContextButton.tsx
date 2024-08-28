@@ -29,7 +29,7 @@ export const ContextButton = () => {
         <span>{amount} {CurrencySymbols[currency]}</span>
         <span>{percent}%</span>
         <img
-          src="src/assets/icons/down-chevron.svg"
+          src="/assets/icons/down-chevron.svg"
           alt="down-chevron"
           className="context-button__dropdown--icon"
         />
@@ -39,7 +39,7 @@ export const ContextButton = () => {
         onClick={handleAddBalance}
       >
         <img
-          src="src/assets/icons/plus.svg"
+          src="/assets/icons/plus.svg"
           alt="plus"
         />
       </button>

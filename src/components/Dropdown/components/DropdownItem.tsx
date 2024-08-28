@@ -13,7 +13,7 @@ export const DropdownItem = ({
 }: DropdownItemType) => {
   return (
     <div className="dropdown__selected">
-      <img src={`src/assets/logos/${icon}`} alt="mastercard"/>
+      <img src={`/assets/logos/${icon}`} alt="mastercard"/>
       <div className="dropdown__info">
         <p>{name}</p>
         <p>Commission {commission}</p>
