@@ -30,6 +30,26 @@
       "currency": "USD",
       "status": "Performed",
       "type": "Withdraw"
+    },
+    {
+      "id": "32560",
+      "service": "Visa",
+      "date": "3.12",
+      "time": "1:20PM",
+      "amount": 180.00,
+      "currency": "USD",
+      "status": "Active",
+      "type": "Withdraw"
+    },
+    {
+      "id": "32560",
+      "service": "Skrill",
+      "date": "16.03",
+      "time": "3:59PM",
+      "amount": 140.00,
+      "currency": "USD",
+      "status": "Processing",
+      "type": "Withdraw"
     }
   ]
 }

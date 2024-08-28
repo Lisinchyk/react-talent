@@ -4,25 +4,19 @@ import "./style.scss";
 type SectionProps = {
   title: string;
   children: ReactNode | ReactNode[];
-  icon?: ReactNode;
-  onClick?: () => void;
+  headerElement?: ReactNode;
 };
 
 export const Section = ({
   title,
   children,
-  icon,
-  onClick
+  headerElement
 }: SectionProps) => {
   return (
     <section className="section">
       <div className="section__header">
         <h2 className="section__title">{title}</h2>
-        {icon && (
-          <button className="section__button" onClick={onClick}>
-            {icon}
-          </button>
-        )}
+        {headerElement && <div className="section__element">{headerElement}</div>}
       </div>
       {children}
     </section>

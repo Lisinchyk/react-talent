@@ -1,0 +1,44 @@
+.filter {
+  &__container {
+   position: relative;
+  }
+
+  &__button {
+    max-width: 24px;
+    max-height: 24px;
+    border: 0;
+    padding: 0;
+    border-radius: 4px;
+    background-color: #30363E;
+    cursor: pointer;
+  }
+
+  &__dropdown {
+    position: absolute;
+    z-index: 10;
+    top: 10px;
+    right: 0;
+    width: 150px;
+    color: var(--title-color);
+    list-style-type: none;
+    padding-left: 0;
+    background-color: #30363E;
+    max-height: 350px;
+    overflow-y: scroll;
+    border-radius: 4px;
+  }
+
+  &__item {
+    padding: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:hover {
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    &:not(:first-of-type) {
+      border-top: 1px solid #000000;
+    }
+  }
+}

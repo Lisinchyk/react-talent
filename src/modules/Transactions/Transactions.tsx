@@ -1,36 +1,36 @@
+import { useAppDispatch } from "../../app/hooks.ts";
+import { useTransactions } from "../../hooks/useTransactions.ts";
 import { TransactionCard } from "../../components/TransactionCard/TransactionCard.tsx";
 import { ActionButton } from "../../components/Buttons/ActionButton.tsx";
 import { Section } from "../../components/Section/Section.tsx";
-import { useAppDispatch, useAppSelector } from "../../app/hooks.ts";
-import { selectIsTransactionsLoading, selectTransactionsData } from "../../features/transactions/transactionsSlice.ts";
-import { useEffect } from "react";
-import { getTransactions } from "../../features/transactions/transactionsAPI.ts";
+import { Filter, OptionType } from "../../components/Filter/Filter.tsx";
+import { setFilter } from "../../features/transactions/transactionsSlice.ts";
+import { FILTER_OPTIONS, FilterSortValues } from "../../constants.ts";
 
 export const Transactions = () => {
   const dispatch = useAppDispatch();
-  const transactions = useAppSelector(selectTransactionsData);
-  const isTransactionsLoading = useAppSelector(selectIsTransactionsLoading);
-  
-  useEffect(() => {
-    dispatch(getTransactions());
-  }, []);
-  
-  const handleShowMoreButton = () => {
-    console.log("Show more button clicked!");
-  };
+  const { transactions, isTransactionsLoading, loadMore } = useTransactions();
   
   if (isTransactionsLoading) {
     return <h1>Loading...</h1>;
   }
   
+  const handleFilterChange = (value: OptionType["value"]) => {
+    dispatch(setFilter(value as FilterSortValues));
+  };
+  
   return (
     <Section
       title="Transactions"
-      icon={<img src="/assets/icons/filters.svg" alt="filters" />}
-      onClick={() => console.log("Filter button clicked!")}
+      headerElement={
+        <Filter
+          options={FILTER_OPTIONS}
+          onFilterChange={handleFilterChange}
+        />
+      }
     >
       <div>
-        {transactions.map((transaction, index) => (
+      {transactions.map((transaction, index) => (
           <div key={transaction.id + index}>
             <TransactionCard
               data={transaction}
@@ -39,7 +39,7 @@ export const Transactions = () => {
         ))}
       </div>
       <ActionButton
-        onClick={handleShowMoreButton}
+        onClick={loadMore}
         title="Show More"
       />
     </Section>
